@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:slime_ball",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Pokeball\",\"italic\":false}',Lore:['{\"text\":\" \"}','{\"text\":\"Caught:\",\"color\":\"gray\",\"italic\":false}','{\"text\":\"-\",\"color\":\"green\",\"italic\":false}']},CustomModelData:3330101,ctc:{\"id\":\"pokeball\",\"from\":\"2mal3:pokeball\",traits:{\"item\":1b,\"pokeball\":1b,\"tool\":1b}}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

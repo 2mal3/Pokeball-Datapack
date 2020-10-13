@@ -1,0 +1,18 @@
+{
+  "display": {
+      "title": "Pokeball v1.0.0",
+      "description": "With this datapack the pokeball is added to Minecraft!",
+      "icon": {
+          "item": "minecraft:slime_ball",
+          "nbt": "{CustomModelData:3330101}"
+      },
+      "announce_to_chat": false,
+      "show_toast": false
+  },
+  "parent": "global:2mal3",
+  "criteria": {
+      "trigger": {
+          "trigger": "minecraft:tick"
+      }
+  }
+}

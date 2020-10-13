@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:armor_stand",
+    "minecraft:area_effect_cloud",
+    "minecraft:item",
+    "minecraft:experience_orb",
+    "minecraft:experience_bottle",
+    "minecraft:item_frame",
+    "minecraft:end_crystal",
+    "minecraft:tnt",
+    "minecraft:arrow",
+
+    "minecraft:minecart",
+    "minecraft:tnt_minecart",
+    "minecraft:hopper_minecart",
+
+    "minecraft:player"
+  ]
+}
