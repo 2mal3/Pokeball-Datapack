@@ -8,8 +8,8 @@ scoreboard objectives add poba.data dummy
 # set version
 scoreboard players set $poba.v1 poba.data 1
 scoreboard players set $poba.v2 poba.data 0
-scoreboard players set $poba.v3 poba.data 0
-scoreboard players set $poba.version poba.data 10000
+scoreboard players set $poba.v3 poba.data 1
+scoreboard players set $poba.version poba.data 10010
 
 # send reload massage after 4 sekonds
 execute unless score $poba.first_run poba.data matches 1 run schedule function 2mal3:poba/core/first_run 4s
