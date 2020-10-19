@@ -6,8 +6,8 @@ The Pokeball Datapack introduces the Pokeball to Minecraft. With it, you can eas
 
 ## Usage:
 First you have to craft the pokeball:                                     
-![Crafting Picture](1)                                          
-To catch a creature, drop the pokeball on it. After a short time the creature will be caught with a certain probability, but the pokeball can also be destroyed.                                             
+![Crafting Picture]https://github.com/2mal3/core/blob/main/images/pokeball-datapack/crafting.png)                                    
+To catch a creature, drop the pokeball on it. After a short time the creature will be caught with a certain probability, or the pokeball can also be destroyed.                                             
 To release a creature again, right click with the pokeball at this position. You will get the pokeball back.
 
 ## Features:
@@ -15,7 +15,6 @@ To release a creature again, right click with the pokeball at this position. You
  - Efficient
  - Good compatibility with other datapacks
  - Also works on Paperspigot
- - Debug system
 
 ## Compatibility:
  - 1.16+
