@@ -1,0 +1,18 @@
+{
+  "display": {
+      "title": "Pokeball v2.0.0",
+      "description": "Add the pokeball item.",
+      "icon": {
+          "item": "minecraft:snowball",
+          "nbt": "{CustomModelData:3330101}"
+      },
+      "announce_to_chat": false,
+      "show_toast": false
+  },
+  "parent": "global:2mal3",
+  "criteria": {
+      "trigger": {
+          "trigger": "minecraft:tick"
+      }
+  }
+}

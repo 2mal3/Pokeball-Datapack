@@ -1,4 +1,6 @@
 {
-    "condition": "minecraft:random_chance",
-    "chance": 0.7
-  }
+  "__comment": "Chance with which a neutral entity is caught.",
+
+  "condition": "minecraft:random_chance",
+  "chance": 0.65
+}

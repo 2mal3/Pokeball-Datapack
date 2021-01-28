@@ -1,4 +1,6 @@
 {
-    "condition": "minecraft:random_chance",
-    "chance": 0.8
-  }
+  "__comment": "Chance with which a passive entity is caught.",
+
+  "condition": "minecraft:random_chance",
+  "chance": 0.75
+}

@@ -1,4 +1,6 @@
 {
-    "condition": "minecraft:random_chance",
-    "chance": 0.6
-  }
+  "__comment": "Chance with which a hostile entity is caught.",
+
+  "condition": "minecraft:random_chance",
+  "chance": 0.55
+}

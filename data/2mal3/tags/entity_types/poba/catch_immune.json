@@ -1,4 +1,6 @@
 {
+  "__comment": "Entities that are too strong to be caught.",
+
   "replace": false,
   "values": [
     "minecraft:wither",

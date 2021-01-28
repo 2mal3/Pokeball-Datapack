@@ -1,4 +1,4 @@
-# Pokeball Datapack v1.0.1
+# Pokeball Datapack v2.0.0
 
 The Pokeball Datapack introduces the Pokeball to Minecraft. With it, you can easily catch entities and free them at other places.
 

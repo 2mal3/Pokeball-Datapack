@@ -1,22 +1,21 @@
-# Description: Uninstall the datapack
-# Called from: core/uninstall/uninstall_ask
+# Description: Uninstalls the Datapack
+# Called from function: core/uninstall/uninstall_ask
 # Datapack by 2mal3
 
-# send remove message
-tellraw @a [{"text":"Pokeball Datapack v"},{"score":{"name":"$poba.v1","objective":"poba.data"}},{"text":"."},{"score":{"name":"$poba.v2","objective":"poba.data"}},{"text":"."},{"score":{"name":"$poba.v3","objective":"poba.data"}},{"translate":" by 2mal3 was successfully uninstalled."}]
+# Output debug message in chat, if enabled (INFO)
+tellraw @a[scores={poba.debug_mode=3..}] [{"text":"[","color":"gray"},{"text":"Pokeball","color":"green"},{"text":"/","color":"gray"},{"text":"INFO","color":"green"},{"text":"]: ","color":"gray"},{"text":"Datapack uninstalled!","color":"green"}]
 
-# remove scoreboards
-scoreboard objectives remove poba.data
 
-# clear pokeball
-clear @a minecraft:slime_ball{CustomModelData:3330101}
-
-# stop ticks
+# Stops the loops
 schedule clear 2mal3:poba/core/tick/second
 
-# gamelog info
-execute if score $poba.debug poba.data matches 1 run tellraw @a[tag=poba.debug] [{"text":"[","color":"gray"},{"text":"Pokeball","color":"green"},{"text":"/","color":"gray"},{"text":"INFO","color":"green"},{"text":"]:","color":"gray"},{"text":" Uninstalled datapack.","color":"green"}]
+# Deletes the scoreboards
+scoreboard objectives remove poba.data
+scoreboard objectives remove poba.debug_mode
 
-# disable datapack
-datapack disable "file/Pokeball-Datapack-v1.0.0"
-datapack disable "file/Pokeball-Datapack-v1.0.0.zip"
+# Sends an uninstallation message to all players
+tellraw @a [{"text":"Pokeball Datapack v1.0.0 by 2mal3 was successfully uninstalled."}]
+
+# Disables the datapack
+datapack disable "file/Pokeball-Datapack-v2.0.0"
+datapack disable "file/Pokeball-Datapack-v2.0.0.zip"
