@@ -1,8 +1,8 @@
 # Pokeball Datapack v2.0.0
 
-The Pokeball Datapack introduces the Pokeball to Minecraft. With it, you can easily catch entities and free them at other places.
+### Warning: This version is extremely experimental and will probably not work properly or at all. I take no responsibility for any errors or damage caused by this version and will not help anyone using this version.
 
-***
+The Pokeball Datapack introduces the Pokeball to Minecraft. With it, you can easily catch entities and free them at other places.
 
 ## Usage:
 First you have to craft the pokeball:                                     
@@ -10,13 +10,13 @@ First you have to craft the pokeball:
 To catch a creature, drop the pokeball on it. After a short time the creature will be caught with a certain probability, or the pokeball can also be destroyed.                                             
 To release a creature again, right click with the pokeball at this position. You will get the pokeball back.
 
-## Features:
+### Features:
  - Balanced
  - Efficient
  - Good compatibility with other datapacks
  - Also works on Paperspigot
 
-## Compatibility:
+### Compatibility:
  - 1.16+
  - Singleplayer
  - Multiplayer
@@ -27,7 +27,7 @@ _For all other versions the datapack was not designed, so errors may occur._
 
 ***
 
-## Installation:
+### Installation:
  - Download the datapack file.
  - Move the datapack file to a datapack folder in a world of your choice.
  - Reload the world.
@@ -37,7 +37,7 @@ _For all other versions the datapack was not designed, so errors may occur._
  - Activate the Resurcepack.
 
 
-## Uninstall:
+### Uninstall:
  - Enter `/function #2mal3:poba/uninstall`.
  - Confirm that you want to uninstall.
  - Optional: Delete the datapack from the folder.
