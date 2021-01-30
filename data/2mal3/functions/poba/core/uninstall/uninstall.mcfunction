@@ -18,5 +18,5 @@ schedule clear 2mal3:poba/core/tick/second
 execute if score $poba.debug poba.data matches 1 run tellraw @a[tag=poba.debug] [{"text":"[","color":"gray"},{"text":"Pokeball","color":"green"},{"text":"/","color":"gray"},{"text":"INFO","color":"green"},{"text":"]:","color":"gray"},{"text":" Uninstalled datapack.","color":"green"}]
 
 # disable datapack
-datapack disable "file/Pokeball-Datapack-v1.0.0"
-datapack disable "file/Pokeball-Datapack-v1.0.0.zip"
+datapack disable "file/Pokeball-Datapack-v1.0.1"
+datapack disable "file/Pokeball-Datapack-v1.0.1.zip"
