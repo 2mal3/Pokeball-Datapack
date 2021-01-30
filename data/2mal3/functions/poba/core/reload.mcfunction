@@ -1,5 +1,5 @@
 # Description: Init datapack
-# Called from: #reaload
+# Called from tag: load:load
 # Datapack by 2mal3
 
 # add scoreboards

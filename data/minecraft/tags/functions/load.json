@@ -1,5 +1,5 @@
 {
- "values": [
- "2mal3:poba/core/reload"
- ]
+    "values": [
+        "#load:__init"
+    ]
 }
