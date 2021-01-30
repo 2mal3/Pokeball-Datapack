@@ -7,15 +7,13 @@ tellraw @a [{"text":"Pokeball Datapack v1.0.1 by 2mal3 was successfully uninstal
 
 # remove scoreboards
 scoreboard objectives remove poba.data
+scoreboard objectives remove poba.debug_mode
 
 # clear pokeball
 clear @a minecraft:slime_ball{CustomModelData:3330101}
 
 # stop ticks
 schedule clear 2mal3:poba/core/tick/second
-
-# gamelog info
-execute if score $poba.debug poba.data matches 1 run tellraw @a[tag=poba.debug] [{"text":"[","color":"gray"},{"text":"Pokeball","color":"green"},{"text":"/","color":"gray"},{"text":"INFO","color":"green"},{"text":"]:","color":"gray"},{"text":" Uninstalled datapack.","color":"green"}]
 
 # disable datapack
 datapack disable "file/Pokeball-Datapack-v1.0.1"

@@ -11,6 +11,9 @@ clear @s minecraft:knowledge_book 0
 advancement revoke @s only 2mal3:poba/craft_pokeball
 recipe take @s 2mal3:poba/pokeball
 
-# gamelog
-execute if score $poba.debug poba.data matches 1 run tellraw @a[tag=poba.debug] [{"text":"[","color":"gray"},{"text":"Pokeball","color":"green"},{"text":"/","color":"gray"},{"text":"INFO","color":"green"},{"text":"]:","color":"gray"},{"text":" Player crafted pokeball.","color":"green"}]
-execute if score $poba.debug poba.data matches 1 unless entity @s[predicate=2mal3:poba/player_have_pokeball] run tellraw @a[tag=poba.debug] [{"text":"[","color":"gray"},{"text":"Pokeball","color":"red"},{"text":"/","color":"gray"},{"text":"ERROR","color":"red"},{"text":"]:","color":"gray"},{"text":" Could't give Pokeball. Inventory full?","color":"red"}]
+
+# Output debug message in chat, if enabled (INFO)
+tellraw @a[scores={poba.debug_mode=3..}] [{"text":"[","color":"gray"},{"text":"Pokeball","color":"green"},{"text":"/","color":"gray"},{"text":"INFO","color":"green"},{"text":"]: ","color":"gray"},{"text":"Player ","color":"green"},{"selector":"@s","color":"gray"},{"text":" crafted pokeball.","color":"green"}]
+
+# Output debug message in chat, if enabled (ERROR)
+execute unless entity @s[predicate=2mal3:poba/player_have_pokeball] run tellraw @a[scores={poba.debug_mode=1..}] [{"text":"[","color":"gray"},{"text":"Pokeball","color":"red"},{"text":"/","color":"gray"},{"text":"INFO","color":"red"},{"text":"]: ","color":"gray"},{"text":"Could't give player ","color":"red"},{"selector":"@s","color":"gray"},{"text":" the pokeball. Inventory full?","color":"red"}]

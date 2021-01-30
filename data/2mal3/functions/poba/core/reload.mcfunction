@@ -4,6 +4,7 @@
 
 # add scoreboards
 scoreboard objectives add poba.data dummy
+scoreboard objectives add poba.debug_mode dummy
 
 # set version
 scoreboard players set $poba.version poba.data 10010
@@ -14,5 +15,5 @@ execute unless score $poba.first_run poba.data matches 1 run schedule function 2
 # start other ticks
 function 2mal3:poba/core/tick/second
 
-# gamelog info
-execute if score $poba.debug poba.data matches 1 run tellraw @a[tag=poba.debug] [{"text":"[","color":"gray"},{"text":"Pokeball","color":"green"},{"text":"/","color":"gray"},{"text":"INFO","color":"green"},{"text":"]:","color":"gray"},{"text":" Reloaded datapack.","color":"green"}]
+# Output debug message in chat, if enabled (INFO)
+tellraw @a[scores={poba.debug_mode=3..}] [{"text":"[","color":"gray"},{"text":"Pokeball","color":"green"},{"text":"/","color":"gray"},{"text":"INFO","color":"green"},{"text":"]: ","color":"gray"},{"text":"Reloaded datapack!","color":"green"}]

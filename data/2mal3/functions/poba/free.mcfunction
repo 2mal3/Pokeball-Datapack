@@ -15,5 +15,6 @@ execute if entity @s[tag=poba.no_name] run data merge entity @s {CustomName:""}
 tag @s remove poba.caught
 tag @s remove poba.no_name
 
-# debug
-execute if score $poba.debug poba.data matches 1 run tellraw @a[tag=poba.debug] [{"text":"[","color":"gray"},{"text":"Pokeball","color":"green"},{"text":"/","color":"gray"},{"text":"INFO","color":"green"},{"text":"]:","color":"gray"},{"text":" Freed ","color":"green"},{"selector":"@s","color":"green"},{"text":"!","color":"green"}]
+
+# Output debug message in chat, if enabled (INFO)
+tellraw @a[scores={poba.debug_mode=3..}] [{"text":"[","color":"gray"},{"text":"Pokeball","color":"green"},{"text":"/","color":"gray"},{"text":"INFO","color":"green"},{"text":"]: ","color":"gray"},{"text":"Freed ","color":"green"},{"selector":"@s","color":"gray"},{"text":"!","color":"green"}]

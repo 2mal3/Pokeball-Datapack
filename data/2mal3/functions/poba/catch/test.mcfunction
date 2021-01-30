@@ -2,8 +2,9 @@
 # Called from: 2mal3:poba/core/tick/second
 # Datapack by 2mal3
 
-# gamelog
-execute if score $poba.debug poba.data matches 1 run tellraw @a[tag=poba.debug] [{"text":"[","color":"gray"},{"text":"Pokeball","color":"green"},{"text":"/","color":"gray"},{"text":"INFO","color":"green"},{"text":"]:","color":"gray"},{"text":" Trying to catch ","color":"green"},{"selector":"@s","color":"green"},{"text":" ...","color":"green"}]
+# Output debug message in chat, if enabled (INFO)
+tellraw @a[scores={poba.debug_mode=3..}] [{"text":"[","color":"gray"},{"text":"Pokeball","color":"green"},{"text":"/","color":"gray"},{"text":"INFO","color":"green"},{"text":"]: ","color":"gray"},{"text":"Trying to catch ","color":"green"},{"selector":"@s","color":"gray"},{"text":" ...","color":"green"}]
+
 
 # Resets the entity catch storage
 scoreboard players set $poba.caught poba.data 0
