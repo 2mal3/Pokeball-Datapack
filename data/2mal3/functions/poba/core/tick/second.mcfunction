@@ -3,7 +3,7 @@
 # Datapack by 2mal3
 
 # cathch
-execute as @e[type=minecraft:item,predicate=2mal3:poba/pokeball] at @s unless block ~ ~-0.1 ~ #2mal3:poba/air as @e[distance=..1.5,type=!#2mal3:poba/no_real_entitys] at @s run function 2mal3:poba/catch/test
+execute as @e[type=minecraft:item,predicate=2mal3:poba/pokeball] at @s unless block ~ ~-0.1 ~ #2mal3:poba/air as @e[type=!#2mal3:poba/no_real_entitys,distance=..1.5,sort=random,limit=1] at @s run function 2mal3:poba/catch/test
 
 # freed entitys
 execute as @e[tag=poba.caught] at @s run function 2mal3:poba/free

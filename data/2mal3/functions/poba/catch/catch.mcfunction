@@ -98,6 +98,9 @@ kill @s
 kill @e[type=minecraft:item,predicate=2mal3:poba/pokeball,distance=..1.5,sort=nearest,limit=1]
 
 
+### Saves that the entity was caught
+scoreboard players set $poba.caught poba.data 1
+
 
 ### gamelog
 execute if score $poba.debug poba.data matches 1 run tellraw @a[tag=poba.debug] [{"text":"[","color":"gray"},{"text":"Pokeball","color":"green"},{"text":"/","color":"gray"},{"text":"INFO","color":"green"},{"text":"]:","color":"gray"},{"text":" Catched ","color":"green"},{"selector":"@s","color":"green"},{"text":"!","color":"green"}]
