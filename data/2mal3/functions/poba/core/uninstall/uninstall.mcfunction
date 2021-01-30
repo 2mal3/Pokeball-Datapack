@@ -3,7 +3,7 @@
 # Datapack by 2mal3
 
 # send remove message
-tellraw @a [{"text":"Pokeball Datapack v"},{"score":{"name":"$poba.v1","objective":"poba.data"}},{"text":"."},{"score":{"name":"$poba.v2","objective":"poba.data"}},{"text":"."},{"score":{"name":"$poba.v3","objective":"poba.data"}},{"translate":" by 2mal3 was successfully uninstalled."}]
+tellraw @a [{"text":"Pokeball Datapack v1.0.1 by 2mal3 was successfully uninstalled."}]
 
 # remove scoreboards
 scoreboard objectives remove poba.data

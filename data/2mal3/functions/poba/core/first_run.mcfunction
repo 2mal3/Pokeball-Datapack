@@ -3,10 +3,8 @@
 # Datapack by 2mal3
 
 # send message
-tellraw @a [{"text":"Pokeball Datapack v","color":"blue"},{"score":{"name":"$poba.v1","objective":"poba.data"},"color":"blue"},{"text":".","color":"blue"},{"score":{"name":"$poba.v2","objective":"poba.data"},"color":"blue"},{"text":".","color":"blue"},{"score":{"name":"$poba.v3","objective":"poba.data"},"color":"blue"},{"translate":" by 2mal3 was installed!","color":"blue"}]
+tellraw @a [{"text":"Pokeball Datapack v1.0.1 by 2mal3 was installed!","color":"blue"}]
 
-# set scores
-scoreboard players set $poba.debug poba.data 0
 
 # reset
 scoreboard players set $poba.first_run poba.data 1
