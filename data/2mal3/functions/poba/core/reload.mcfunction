@@ -7,7 +7,7 @@ scoreboard objectives add poba.data dummy
 scoreboard objectives add poba.debug_mode dummy
 
 # set version in format xx.xx.xx
-scoreboard players set $poba.version poba.data 010002
+scoreboard players set $poba.version poba.data 010003
 
 
 # send reload massage after 4 sekonds

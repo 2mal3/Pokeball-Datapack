@@ -1,4 +1,4 @@
-# Pokeball Datapack v1.0.2
+# Pokeball Datapack v1.0.3
 
 The Pokeball Datapack introduces the Pokeball to Minecraft. With it, you can easily catch entities and free them at other places.
 
@@ -22,6 +22,7 @@ To release a creature again, right click with the pokeball at this position. You
  - Multiplayer
  - Vanilla
  - Paperspigot
+ - Fabric (Not compatible with randompatches)
 
 _For all other versions the datapack was not designed, so errors may occur._
 

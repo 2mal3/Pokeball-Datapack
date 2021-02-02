@@ -3,7 +3,7 @@
 # Datapack by 2mal3
 
 # send remove message
-tellraw @a [{"text":"Pokeball Datapack v1.0.2 by 2mal3 was successfully uninstalled."}]
+tellraw @a [{"text":"Pokeball Datapack v1.0.3 by 2mal3 was successfully uninstalled."}]
 
 # remove scoreboards
 scoreboard objectives remove poba.data
@@ -16,5 +16,5 @@ clear @a minecraft:slime_ball{CustomModelData:3330101}
 schedule clear 2mal3:poba/core/tick/second
 
 # disable datapack
-datapack disable "file/Pokeball-Datapack-v1.0.2"
-datapack disable "file/Pokeball-Datapack-v1.0.2.zip"
+datapack disable "file/Pokeball-Datapack-v1.0.3"
+datapack disable "file/Pokeball-Datapack-v1.0.3.zip"

@@ -3,7 +3,7 @@
 # Datapack by 2mal3
 
 # send message
-tellraw @a [{"text":"Pokeball Datapack v1.0.2 by 2mal3 was installed!","color":"blue"}]
+tellraw @a [{"text":"Pokeball Datapack v1.0.3 by 2mal3 was installed!","color":"blue"}]
 
 
 # reset
