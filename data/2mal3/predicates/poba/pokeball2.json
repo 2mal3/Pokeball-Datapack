@@ -3,6 +3,6 @@
   "entity": "this",
   "predicate": {
     "type": "minecraft:item",
-    "nbt": "{Item:{Count:1b,tag:{ctc:{\"id\":\"pokeball\",\"from\":\"2mal3:pokeball\",traits:{\"item\":1b,\"pokeball\":1b,\"tool\":1b}},CustomModelData:3330101}}}"
+    "nbt": "{Item:{Count:1b,tag:{ctc:{\"id\":\"pokeball\",\"from\":\"2mal3:pokeball\",traits:{\"item\":1b,\"pokeball\":1b,\"tool\":1b}},CustomModelData:3330102}}}"
   }
 }

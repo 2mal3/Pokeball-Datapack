@@ -71,20 +71,24 @@ execute if entity @s[type=minecraft:cave_spider] run summon item ~ ~ ~ {Motion:[
 # add tags
 tag @s add poba.caught
 execute unless data entity @s CustomName run tag @s add poba.no_name
+tag @e[type=minecraft:item,predicate=2mal3:poba/pokeball2,distance=..1.5,sort=nearest,limit=1] add poba.pokeball
 
 # special things for villagers
 execute if entity @s[type=minecraft:villager] run function 2mal3:poba/catch/villager
 
 # transfare data
-execute store success score $poba.temp_0 poba.data run data modify entity @e[type=minecraft:item,predicate=2mal3:poba/pokeball2,distance=..1.5,sort=nearest,limit=1] Item.tag.EntityTag set from entity @s
-data remove entity @e[type=minecraft:item,predicate=2mal3:poba/pokeball2,distance=..1.5,sort=nearest,limit=1] Item.tag.EntityTag.Pos
+execute store success score $poba.temp_0 poba.data run data modify entity @e[type=minecraft:item,tag=poba.pokeball,distance=..1.5,sort=nearest,limit=1] Item.tag.EntityTag set from entity @s
+data remove entity @e[type=minecraft:item,tag=poba.pokeball,distance=..1.5,sort=nearest,limit=1] Item.tag.EntityTag.Pos
 
 # set lore name of the pokeball to the name of the entity
 tag @s add poba.this
 setblock ~ 255 ~ oak_sign{Text1:'{"selector":"@e[tag=poba.this,limit=1,sort=nearest]]","color":"green","italic":false}'} replace
-data modify entity @e[type=minecraft:item,predicate=2mal3:poba/pokeball2,distance=..1.5,sort=nearest,limit=1] Item.tag.display.Lore[2] set from block ~ 255 ~ Text1
+data modify entity @e[type=minecraft:item,tag=poba.pokeball,distance=..1.5,sort=nearest,limit=1] Item.tag.display.Lore[2] set from block ~ 255 ~ Text1
 setblock ~ 255 ~ minecraft:air
 tag @s remove poba.this
+
+# remove tags
+tag @e[type=minecraft:item,tag=poba.pokeball,distance=..1.5,sort=nearest,limit=1] remove poba.pokeball
 
 
 ### sound effect
